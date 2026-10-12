@@ -1,250 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ydy100 | Personal Homepage</title>
-    <!-- Google Fonts & FontAwesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent-color: #38bdf8;
-            --accent-hover: #0284c7;
-            --border-color: #334155;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-        }
-
-        header {
-            text-align: center;
-            padding: 3rem 1rem 2rem;
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 2rem;
-        }
-
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            background-color: var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 3rem;
-            color: var(--accent-color);
-            border: 3px solid var(--accent-color);
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .bio {
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            color: var(--text-primary);
-            font-size: 1.25rem;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background-color: var(--bg-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            border: 1px solid var(--border-color);
-        }
-
-        .social-links a:hover {
-            background-color: var(--accent-color);
-            color: #000;
-            transform: translateY(-3px);
-        }
-
-        section {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-color);
-        }
-
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tag {
-            background-color: var(--bg-color);
-            color: var(--text-secondary);
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .project-card {
-            background-color: var(--bg-color);
-            padding: 1.25rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 1rem;
-            transition: border-color 0.2s ease;
-        }
-
-        .project-card:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-card:hover {
-            border-color: var(--accent-color);
-        }
-
-        .project-title {
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-bottom: 0.4rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .project-title a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        .project-desc {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        footer {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-top: 2rem;
-            padding-bottom: 1rem;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1118">
+<meta name="description" content="아세아고주파 — 고주파 유도 가열 기술과 산업 제어, 임베디드 시스템을 연구·설계하는 기술 포트폴리오.">
+<title>아세아고주파 | Induction Heating & Industrial Control</title>
+<style>
+:root{--bg:#f3f5f6;--paper:#fff;--ink:#101a24;--muted:#65717d;--line:#dce2e6;--accent:#176b87;--accent2:#e6a84b;--hero:#0b1118;--hero2:#111e2a;--soft:#eaf2f5;--shadow:0 18px 55px #0b1a2510}
+[data-theme="dark"]{--bg:#0c1218;--paper:#131d26;--ink:#edf3f7;--muted:#a4b1bd;--line:#283640;--accent:#78c5df;--accent2:#f0bd65;--soft:#182a35;--shadow:0 18px 55px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Pretendard","Noto Sans KR",system-ui,-apple-system,sans-serif;line-height:1.65;transition:background .25s,color .25s}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.04em}.brand-mark{display:none}.brand-logo{display:block;width:clamp(190px,24vw,270px);height:auto;max-height:54px;object-fit:contain;object-position:left center}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:.16em;font-weight:700;margin-top:-4px}.navlinks{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:650;color:var(--muted)}.navlinks a:hover{color:var(--accent)}.nav-actions{display:flex;gap:9px;align-items:center}.iconbtn{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);display:grid;place-items:center}.menu-btn{display:none}.hero{background:var(--hero);color:#f4f7f8;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,#1c637c55,transparent 40%),linear-gradient(115deg,transparent 60%,#d99b3820);pointer-events:none}.hero-grid{position:relative;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:40px;padding:100px 0 94px;min-height:560px}.eyebrow{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;font-size:11px;letter-spacing:.19em;color:var(--accent2);font-weight:800}.eyebrow:before{content:"";width:27px;height:1px;background:currentColor}.hero h1{font-size:clamp(39px,5.2vw,68px);line-height:1.12;letter-spacing:-.065em;margin:22px 0 24px;max-width:720px}.hero h1 em{font-style:normal;color:#76c4dc}.hero-copy{max-width:590px;color:#b9c5cd;font-size:16px}.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:4px;padding:13px 19px;font-weight:750;font-size:13px;border:1px solid transparent;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:#e9b35b;color:#111820}.btn-ghost{border-color:#ffffff42;color:#fff}.hero-note{display:flex;align-items:center;gap:12px;margin-top:42px;color:#9baab5;font-size:11px;letter-spacing:.05em}.pulse{width:7px;height:7px;background:#78c5a4;border-radius:50%;box-shadow:0 0 0 5px #78c5a420}.visual{min-height:330px;position:relative;display:grid;place-items:center}.coil{width:min(100%,410px);aspect-ratio:1;border-radius:50%;border:1px solid #78c5df32;display:grid;place-items:center;position:relative;background:repeating-radial-gradient(circle,transparent 0 31px,#8bd0e31c 32px 33px)}.coil:before,.coil:after{content:"";position:absolute;border:2px solid #65b9d5;border-radius:50%;transform:rotate(-28deg);width:65%;height:82%;box-shadow:0 0 28px #3ba5c955,inset 0 0 20px #3ba5c922}.coil:after{width:48%;height:92%;transform:rotate(30deg);border-color:#e8b15a;opacity:.8}.core{width:105px;height:180px;border-radius:9px;background:linear-gradient(90deg,#243b49,#8ca7b3 40%,#253e4b 72%,#132630);box-shadow:0 0 55px #54b8d855;z-index:1;transform:rotate(18deg);position:relative}.core:after{content:"";position:absolute;inset:9px 14px;border:1px solid #ffffff44;border-radius:5px}.float-label{position:absolute;padding:10px 13px;border:1px solid #ffffff24;background:#101c26e8;backdrop-filter:blur(8px);font-size:10px;letter-spacing:.12em;color:#c6d9e2}.label-a{top:13%;right:0}.label-b{bottom:14%;left:0}.float-label b{display:block;font-size:17px;color:#e9b35b;letter-spacing:0}.section{padding:94px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}.kicker{font-size:11px;letter-spacing:.18em;color:var(--accent);font-weight:850;text-transform:uppercase}.section h2{font-size:clamp(30px,3.8vw,44px);line-height:1.2;letter-spacing:-.055em;margin:10px 0 0}.section-intro{max-width:450px;color:var(--muted);font-size:14px;margin:0}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.about-statement{font-size:23px;line-height:1.55;letter-spacing:-.04em;font-weight:750;margin:0}.about-statement span{color:var(--accent)}.about-text{color:var(--muted);font-size:14px;margin-top:20px}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.value{padding:17px;border:1px solid var(--line);background:var(--paper);border-radius:5px}.value strong{display:block;font-size:13px}.value span{font-size:11px;color:var(--muted)}.services{background:var(--soft)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{background:var(--paper);border:1px solid var(--line);padding:25px;min-height:240px;border-radius:5px;transition:transform .22s,border-color .22s}.service-card:hover{transform:translateY(-5px);border-color:var(--accent)}.num{font-size:11px;color:var(--accent);letter-spacing:.15em;font-weight:850}.service-icon{margin:20px 0 15px;width:42px;height:42px;border:1px solid var(--line);border-radius:5px;display:grid;place-items:center;color:var(--accent);font-size:20px}.service-card h3{font-size:17px;margin:0 0 8px;letter-spacing:-.03em}.service-card p{font-size:13px;color:var(--muted);margin:0}.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.project{border:1px solid var(--line);background:var(--paper);border-radius:5px;overflow:hidden}.project-art{height:180px;background:#101b25;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#c4d8e2}.project-art:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 40%,#72c6dc17)}.art-grid{position:absolute;inset:0;background-image:linear-gradient(#a7c8d51a 1px,transparent 1px),linear-gradient(90deg,#a7c8d51a 1px,transparent 1px);background-size:25px 25px}.art-ring{width:145px;height:145px;border:2px solid #65bed8;border-radius:50%;box-shadow:inset 0 0 0 18px #65bed811,inset 0 0 0 37px #65bed822,0 0 28px #65bed833;z-index:1}.art-code{z-index:1;font-family:ui-monospace,monospace;font-size:14px;line-height:2;color:#8fd5e6}.art-panel{z-index:1;width:72%;border:1px solid #80b9ca66;padding:15px;background:#142630d9;box-shadow:0 15px 40px #0004}.meter{height:5px;background:#253d49;margin:11px 0}.meter i{display:block;height:100%;background:#e6ad56}.project-body{padding:23px}.project-meta{font-size:10px;color:var(--accent);font-weight:850;letter-spacing:.12em}.project h3{margin:7px 0;font-size:18px;letter-spacing:-.03em}.project p{margin:0;color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.tag{border:1px solid var(--line);padding:4px 8px;border-radius:3px;color:var(--muted);font-size:10px}.principles{background:var(--hero2);color:#f2f6f8}.principles .section-intro{color:#aebcc6}.principle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.principle{border-top:1px solid #ffffff2b;padding-top:18px}.principle b{font-size:13px;color:#e9b35b;letter-spacing:.08em}.principle h3{font-size:17px;margin:12px 0 8px}.principle p{font-size:12px;color:#aebcc6;margin:0}.contact{background:var(--paper);border-top:1px solid var(--line)}.contact-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;padding:40px;background:var(--soft);border:1px solid var(--line);border-radius:5px}.contact-panel h2{font-size:clamp(27px,3.5vw,40px);margin:8px 0 12px}.contact-panel p{color:var(--muted);font-size:14px;margin:0}.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:190px}.contact-actions .btn-primary{background:var(--accent);color:white}.contact-actions .btn-ghost{color:var(--ink);border-color:var(--line)}footer{padding:25px 0;color:var(--muted);font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-weight:800;color:var(--ink)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}.reveal.visible{opacity:1;transform:none}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:var(--bg);padding:11px 16px;border-radius:4px;font-size:12px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.navlinks{gap:15px}.navlinks a{font-size:12px}.hero-grid{grid-template-columns:1fr;padding:75px 0 55px}.visual{min-height:280px;max-width:500px;width:100%;margin:auto}.coil{width:300px}.hero h1{font-size:clamp(38px,9vw,60px)}.about-grid{grid-template-columns:1fr;gap:25px}.cards{grid-template-columns:1fr 1fr}.principle-grid{grid-template-columns:1fr 1fr}.section{padding:72px 0}.section-head{align-items:start;flex-direction:column;gap:14px}.contact-panel{grid-template-columns:1fr}.contact-actions{flex-direction:row;flex-wrap:wrap}.contact-actions .btn{flex:1}.values{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.navlinks{display:none;position:absolute;left:0;right:0;top:66px;background:var(--bg);border-bottom:1px solid var(--line);padding:18px 22px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu-btn{display:grid}.brand{font-size:14px}.brand-logo{width:205px;max-height:43px}.hero-grid{padding-top:58px}.hero-copy{font-size:14px}.visual{min-height:245px}.coil{width:245px}.core{height:140px;width:80px}.float-label{font-size:9px}.section{padding:60px 0}.cards,.projects-grid{grid-template-columns:1fr}.service-card{min-height:unset}.project-art{height:155px}.principle-grid{grid-template-columns:1fr 1fr;gap:20px 14px}.principle h3{font-size:15px}.principle p{font-size:11px}.values{grid-template-columns:1fr}.contact-panel{padding:25px 20px}.contact-actions{flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
-
-    <div class="container">
-        <!-- 프로필 헤더 -->
-        <header>
-            <div class="profile-img">
-                <i class="fa-solid fa-code"></i>
-            </div>
-            <h1>ydy100</h1>
-            <p class="subtitle">Developer & Creator</p>
-            <p class="bio">
-                안녕하세요! 지속적인 배움과 기록을 실천하는 개인 공간입니다. <br>
-                프로젝트, 기술 노트 및 개인 활동들을 정리해 공유합니다.
-            </p>
-            <div class="social-links">
-                <a href="https://github.com/ydy100" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:your-email@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </header>
-
-        <!-- 관심 기술 / 분야 -->
-        <section>
-            <h2><i class="fa-solid fa-layer-group"></i> Skills & Tech</h2>
-            <div class="skills-grid">
-                <span class="tag">HTML / CSS / JS</span>
-                <span class="tag">Python</span>
-                <span class="tag">C / C++</span>
-                <span class="tag">Delphi</span>
-                <span class="tag">Git & GitHub</span>
-            </div>
-        </section>
-
-        <!-- 프로젝트 / 기록 -->
-        <section>
-            <h2><i class="fa-solid fa-folder-open"></i> Featured Projects</h2>
-            
-            <div class="project-card">
-                <div class="project-title">
-                    <span>개인 기술 블로그 & 노트</span>
-                    <a href="https://github.com/ydy100" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <p class="project-desc">개발 과정에서 배운 핵심 기술 개념과 문제 해결 과정을 기록하는 공간입니다.</p>
-            </div>
-
-            <div class="project-card">
-                <div class="project-title">
-                    <span>GitHub Pages 홈페이지 프로젝트</span>
-                    <a href="https://ydy100.github.io/" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <p class="project-desc">GitHub Pages 서비스를 이용하여 커스텀 도메인 형태로 구축한 포트폴리오 웹사이트입니다.</p>
-            </div>
-        </section>
-
-        <!-- 하단 카피라이트 -->
-        <footer>
-            <p>© 2026 ydy100. Powered by GitHub Pages.</p>
-        </footer>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="아세아고주파 홈">
+      <img class="brand-logo" src="asea_homepage_assets/asea-logo.png" alt="(주) 아세아고주파 로고">
+    </a>
+    <nav class="navlinks" id="navlinks" aria-label="주요 메뉴">
+      <a href="#about">소개</a><a href="#expertise">기술 분야</a><a href="#projects">프로젝트</a><a href="#approach">설계 철학</a><a href="#contact">문의</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="iconbtn" id="themeBtn" aria-label="테마 전환" title="다크/라이트 모드 전환">◐</button>
+      <button class="iconbtn menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false">☰</button>
     </div>
-
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Engineering · Control · Innovation</div>
+      <h1>열을 정밀하게,<br><em>기술을 더 단단하게.</em></h1>
+      <p class="hero-copy">고주파 유도 가열 기술을 중심으로 전력전자, 임베디드 제어, 산업용 데이터 시각화를 연결합니다. 현장에서 신뢰할 수 있는 시스템을 고민하고 직접 설계합니다.</p>
+      <div class="hero-cta"><a class="btn btn-primary" href="#expertise">기술 분야 살펴보기 <span>↗</span></a><a class="btn btn-ghost" href="#contact">기술 문의하기</a></div>
+      <div class="hero-note"><span class="pulse"></span> POWER ELECTRONICS / EMBEDDED / INDUSTRIAL SYSTEMS</div>
+    </div>
+    <div class="visual" aria-label="유도 가열 코일을 표현한 그래픽">
+      <div class="coil"><div class="core"></div></div>
+      <div class="float-label label-a">INDUCTION <b>HEATING</b></div>
+      <div class="float-label label-b">POWER <b>CONTROL</b></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">01 / About</div><h2>현장의 문제에서<br>설계의 답을 찾습니다.</h2></div><p class="section-intro">장비는 회로만으로 완성되지 않습니다. 전력부와 제어부, 통신과 소프트웨어가 하나의 시스템으로 안정적으로 동작해야 합니다.</p></div>
+    <div class="about-grid reveal">
+      <div><p class="about-statement">고주파 유도 가열 시스템을 중심으로 <span>전력·제어·소프트웨어</span>를 연결하는 엔지니어링.</p></div>
+      <div><p class="about-text">아세아고주파의 기술 포트폴리오는 유도 가열 전력변환과 공진 회로, MCU 기반 제어, PLC 통신, 데이터 수집 및 시각화를 하나의 흐름으로 바라봅니다. 실제 설계에서는 성능뿐 아니라 노이즈 내성, 보호 기능, 유지보수성과 검증 가능성을 함께 고려합니다.</p>
+        <div class="values"><div class="value"><strong>현장 중심</strong><span>실제 운전 조건부터 검토</span></div><div class="value"><strong>시스템 관점</strong><span>전력·제어·데이터 통합</span></div><div class="value"><strong>검증 우선</strong><span>근거와 시험으로 확인</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section services" id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">02 / Expertise</div><h2>관심 기술을 실제 시스템으로.</h2></div><p class="section-intro">하드웨어와 소프트웨어의 경계를 연결하고, 유지보수 가능한 구조로 만드는 데 집중합니다.</p></div>
+    <div class="cards">
+      <article class="service-card reveal"><div class="num">01 — POWER</div><div class="service-icon">⌁</div><h3>고주파 유도 가열</h3><p>공진형 전력변환, DC 링크, IGBT 구동, 게이트 드라이버와 보호회로를 포함한 전력부 설계 검토.</p></article>
+      <article class="service-card reveal"><div class="num">02 — EMBEDDED</div><div class="service-icon">⌘</div><h3>MCU · 임베디드 제어</h3><p>STM32 계열 MCU를 중심으로 센서 입력, 타이밍 제어, 통신, 노이즈 대응과 안전한 상태 전이를 설계.</p></article>
+      <article class="service-card reveal"><div class="num">03 — INDUSTRIAL</div><div class="service-icon">▦</div><h3>PLC · 산업 통신</h3><p>LS PLC, Modbus RTU 및 장비 상태·태그 데이터를 수집하는 인터페이스와 진단 구조.</p></article>
+      <article class="service-card reveal"><div class="num">04 — SOFTWARE</div><div class="service-icon">⌨</div><h3>Delphi · 응용 프로그램</h3><p>Delphi VCL/FMX 기반 업무 도구, 장비 모니터링 UI, API 연동과 현장용 유틸리티.</p></article>
+      <article class="service-card reveal"><div class="num">05 — DIGITAL TWIN</div><div class="service-icon">◎</div><h3>산업 디지털 트윈</h3><p>PLC·MCU·센서 데이터를 통합해 실시간 상태를 시각화하고 이력과 진단 정보를 연결.</p></article>
+      <article class="service-card reveal"><div class="num">06 — AI WORKFLOW</div><div class="service-icon">✳</div><h3>AI · 지식 자산화</h3><p>AI 도구와 문서화·검색 흐름을 활용해 설계 노하우, 코드, 프로젝트 기록을 재사용 가능한 자산으로 정리.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">03 / Selected Directions</div><h2>진행하는 기술 프로젝트.</h2></div><p class="section-intro">아래 항목은 관심 기술을 바탕으로 구성한 포트폴리오 초안입니다. 공개 가능한 실제 프로젝트와 결과물로 교체해 완성할 수 있습니다.</p></div>
+    <div class="projects-grid">
+      <article class="project reveal"><div class="project-art"><div class="art-grid"></div><div class="art-ring"></div></div><div class="project-body"><div class="project-meta">POWER ELECTRONICS</div><h3>유도 가열 전력부 및 게이트 구동</h3><p>공진 회로와 IGBT 모듈 구동, 절연 게이트 드라이버, 보호 및 노이즈 대책을 체계적으로 검토하는 설계 작업.</p><div class="tags"><span class="tag">IGBT</span><span class="tag">Resonance</span><span class="tag">Gate Driver</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><div class="art-grid"></div><div class="art-code">MCU_STATE = READY<br>PLC_LINK = CONNECTED<br>SENSOR_STREAM = ACTIVE<br>FAULT_COUNT = 0</div></div><div class="project-body"><div class="project-meta">INDUSTRIAL CONTROL</div><h3>PLC · MCU 통합 관제</h3><p>장비 상태와 태그 데이터를 수집하고, 연결 상태·운전 정보·알람을 한 화면에서 확인하는 관제 구조.</p><div class="tags"><span class="tag">STM32</span><span class="tag">LS PLC</span><span class="tag">Modbus RTU</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><div class="art-grid"></div><div class="art-panel"><div style="font-size:10px;letter-spacing:.12em">SYSTEM OVERVIEW</div><div class="meter"><i style="width:78%"></i></div><div class="meter"><i style="width:54%"></i></div><div class="meter"><i style="width:91%"></i></div><div style="display:flex;justify-content:space-between;font-size:9px;color:#9bb7c4"><span>POWER</span><span>CONTROL</span><span>DATA</span></div></div></div><div class="project-body"><div class="project-meta">DIGITAL TWIN / HMI</div><h3>실시간 장비 대시보드</h3><p>Web 기반 시각화와 데이터 흐름을 연결하고, 상태 소유권·통신 경계·오류 관측성을 분명하게 설계.</p><div class="tags"><span class="tag">WebSocket</span><span class="tag">SVG</span><span class="tag">HMI</span></div></div></article>
+      <article class="project reveal"><div class="project-art"><div class="art-grid"></div><div class="art-code">PROJECT → NOTES<br>NOTES → SEARCH<br>TEST → EVIDENCE<br>KNOWLEDGE → REUSE</div></div><div class="project-body"><div class="project-meta">DEVELOPER TOOLING</div><h3>Delphi · AI 개발 워크플로</h3><p>Windows 응용 프로그램과 AI API를 연동하고, 프로젝트 메모·테스트·설계 기록을 장기적으로 재사용하는 환경.</p><div class="tags"><span class="tag">Delphi 13.2</span><span class="tag">AI API</span><span class="tag">Knowledge Base</span></div></div></article>
+    </div>
+  </div>
+</section>
+<section class="section principles" id="approach">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">04 / Engineering Principles</div><h2>설계의 기준을 명확하게.</h2></div><p class="section-intro">복잡한 시스템일수록 책임 경계와 검증 방법이 분명해야 합니다.</p></div>
+    <div class="principle-grid">
+      <div class="principle reveal"><b>01 / SAFETY</b><h3>안전과 보호</h3><p>고장 상황과 과도 조건을 먼저 생각하고 보호 동작을 설계합니다.</p></div>
+      <div class="principle reveal"><b>02 / BOUNDARY</b><h3>경계 제어</h3><p>전력·제어·통신·UI의 책임과 인터페이스를 분리합니다.</p></div>
+      <div class="principle reveal"><b>03 / OBSERVABILITY</b><h3>관측 가능성</h3><p>상태, 로그, 오류 원인을 추적할 수 있게 만듭니다.</p></div>
+      <div class="principle reveal"><b>04 / REUSE</b><h3>지식의 자산화</h3><p>설계 결과와 검증 근거를 다음 프로젝트에 활용할 수 있게 기록합니다.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-panel reveal">
+      <div><div class="kicker">05 / Contact</div><h2>기술적인 대화를 시작해 보세요.</h2><p>고주파 유도 가열, 산업 제어, 임베디드 시스템 관련 문의를 환영합니다.</p></div>
+      <div class="contact-actions"><a class="btn btn-primary" href="tel:01089616634">전화 문의 · 010-8961-6634 ↗</a><button class="btn btn-ghost" id="copyPhone">연락처 복사</button></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><span class="footer-brand">(주) 아세아고주파</span> <span>· Induction Heating & Industrial Control</span></div><div>© <span id="year"></span> ASEA HIGH FREQUENCY. All rights reserved.</div></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite">연락처를 복사했습니다.</div>
+<script>
+const root=document.documentElement;
+const themeBtn=document.getElementById('themeBtn');
+const savedTheme=localStorage.getItem('asea-theme');
+if(savedTheme) root.dataset.theme=savedTheme;
+themeBtn.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('asea-theme',next);themeBtn.textContent=next==='dark'?'☼':'◐';});
+themeBtn.textContent=root.dataset.theme==='dark'?'☼':'◐';
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const toast=document.getElementById('toast');
+document.getElementById('copyPhone').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('010-8961-6634');toast.textContent='연락처를 복사했습니다.';}catch(e){toast.textContent='연락처: 010-8961-6634';}toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200);});
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
